@@ -2,7 +2,7 @@ import pygame
 import random
 
 # параметры игры
-fps = 7  # частота кадров
+fps = 10  # частота кадров
 speed = 7 # скорость игры
 screen_width = 900
 screen_height = 800
@@ -263,8 +263,8 @@ while True:
         game.new_figure()
 
     timer += 1
-    if game.score > 100:
-        speed = 3
+    if game.score > 200:
+        speed = 5
     if not game.pause:
         if timer % speed == 0 or game.fast_down:
             game.move_down()
